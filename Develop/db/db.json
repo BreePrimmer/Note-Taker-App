@@ -1,6 +1,14 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Test Title",
+        "text": "Test text"
+    },
+    {
+        "title": "Take care of pets",
+        "text": "Feed Lupin, Feed frogs"
+    },
+    {
+        "title": "Note Title",
+        "text": "Some to do's for this note."
     }
 ]
