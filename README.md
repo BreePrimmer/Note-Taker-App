@@ -19,7 +19,11 @@ N/a
 
 ## Usage 
 
+To find this app, click [here](https://guarded-dawn-27731-ee7ac0414d3b.herokuapp.com/) to use the app on heroku.
+
 To use this app, click the plus icon in the top right to write a new note. Once you write a new note, click on the save button icon in the top right. Your note will now be saved to the list on the left. To view old notes, you can click on them from the list.
+
+![screenshot](./public/assets/images/note-app-sc.JPG)
 
 ## Contributing
 
