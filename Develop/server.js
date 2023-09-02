@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const promisify = require('./promisify')
+const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 
@@ -9,22 +10,22 @@ const PORT = process.env.PORT || 3001;
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// app.use('/api', api);
 
 app.use(express.static('public'));
 
-// API GET route that reads the json, previous notes.
+// API GET route that reads the notes stored in the json file.
 app.get('/api/notes', (req, res) => {
     promisify.readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 })
 
-
-
 // API POST route
 app.post('/api/notes', (req, res) => {
+    const {title, text} = req.body
+
     const newNote = {
-        "title":"Note Title",
-        "text":"Some to do's for this note."
+        "title": title,
+        "text": text,
+        "id": uuidv4()
     };
 
     promisify.readAndAppend(newNote, './db/db.json')
