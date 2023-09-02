@@ -1,14 +1,12 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
+        "title": "New id test",
+        "text": "will it work",
+        "id": "14f8c96d-39bb-4842-ad53-854ad29e3b04"
     },
     {
-        "title": "Take care of pets",
-        "text": "Feed Lupin, Feed frogs"
-    },
-    {
-        "title": "Note Title",
-        "text": "Some to do's for this note."
+        "title": "Final note",
+        "text": "one last test note (:",
+        "id": "7a4f7f90-62e8-4f31-82a6-c1c4d48b4e53"
     }
 ]
